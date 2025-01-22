@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "g00bygui",
   "version": "1.0",
-  "description": "Experimental Websim scripting tool with a GitHub link.",
+  "description": "injector.",
   "permissions": [
     "scripting",
     "activeTab"
@@ -15,9 +15,9 @@
   },
   "action": {
     "default_icon": {
-      "16": "g00bygui_icon.png",
-      "48": "g00bygui_icon.png",
-      "128": "g00bygui_icon.png"
+      "16": "https://github.com/mkaactrl/g00bygui/blob/main/g00bygui_icon.jpeg",
+      "48": "https://github.com/mkaactrl/g00bygui/blob/main/g00bygui_icon.jpeg",
+      "128": "https://github.com/mkaactrl/g00bygui/blob/main/g00bygui_icon.jpeg"
     }
   },
   "content_scripts": [
