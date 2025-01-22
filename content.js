@@ -1,6 +1,6 @@
 console.log("g00bygui activated on Websim!");
 
-// Create the tool interface
+// Create the tool interface and add it to the page
 const container = document.createElement('div');
 container.innerHTML = `
   <div style="position: fixed; top: 10px; left: 10px; background: #282c34; color: white; padding: 10px; z-index: 10000; border-radius: 5px; font-family: Arial, sans-serif;">
