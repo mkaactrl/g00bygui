@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>g00bygui</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 10px;
+    }
+    a {
+      color: #61dafb;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>g00bygui</h1>
+  <button id="activate">Activate Script Tool</button>
+  <br><br>
+  <a href="https://github.com/mkaactrl/g00bygui/" target="_blank">GitHub Repository</a>
+  <script>
+    document.getElementById('activate').addEventListener('click', () => {
+      chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
+        chrome.scripting.executeScript({
+          target: { tabId: tabs[0].id },
+          files: ['content.js']
+        });
+      });
+    });
+  </script>
+</body>
+</html>
