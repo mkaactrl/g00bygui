@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "g00bygui",
   "version": "1.0",
-  "description": "R SC7 for websimai.",
+  "description": "Experimental Websim scripting tool with a GitHub link.",
   "permissions": [
     "scripting",
     "activeTab"
@@ -14,11 +14,10 @@
     "service_worker": "background.js"
   },
   "action": {
-    "default_popup": "popup.html",
     "default_icon": {
-      "16": "g00bygui_icon.jpeg",
-      "48": "g00bygui_icon.jpeg",
-      "128": "g00bygui_icon.jpeg"
+      "16": "g00bygui_icon.png",
+      "48": "g00bygui_icon.png",
+      "128": "g00bygui_icon.png"
     }
   },
   "content_scripts": [
