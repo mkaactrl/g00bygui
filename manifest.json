@@ -1,19 +1,27 @@
 {
-    "name": "g00bygui",
-    "version": "1.0",
-    "manifest_version": 3,
-    "description": "An experimental Websim extension",
-    "permissions": ["activeTab", "scripting"],
-    "background": {
-        "service_worker": "background.js"
-    },
-    "content_scripts": [
-        {
-            "matches": ["*://*.websim.ai/*"],
-            "js": ["content.js"]
-        }
-    },
-    "icons": {
-        "128": "g00bygui_icon.png"
+  "manifest_version": 3,
+  "name": "g00bygui",
+  "version": "1.0",
+  "description": "Experimental Websim scripting tool.",
+  "permissions": [
+    "scripting",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://*.websim.ai/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "g00bygui_icon.png",
+    "48": "g00bygui_icon.png",
+    "128": "g00bygui_icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.websim.ai/*"],
+      "js": ["content.js"]
     }
+  ]
 }
